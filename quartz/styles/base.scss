@@ -4,6 +4,13 @@
 @use "./syntax.scss";
 @use "./callouts.scss";
 
+
+:root {
+  --bg: rgba(0, 0, 0, 0.75);
+  --border: rgba(255, 255, 255, 0.2);
+}
+
+
 html {
   scroll-behavior: smooth;
   text-size-adjust: none;
@@ -16,14 +23,15 @@ body {
   box-sizing: border-box;
   background-color: var(--light);
   font-family: var(--bodyFont);
-  color: var(--darkgray);
+  color: var(--colorred);
 }
 
-.text-highlight {
+/* .text-highlight {
   background-color: var(--textHighlight);
   padding: 0 0.1rem;
   border-radius: 5px;
-}
+} */
+
 ::selection {
   background: color-mix(in srgb, var(--tertiary) 60%, rgba(255, 255, 255, 0));
   color: var(--darkgray);
@@ -40,7 +48,7 @@ ol,
 ul,
 .katex,
 .math {
-  color: var(--darkgray);
+  color: var(--clrtxt);
   fill: var(--darkgray);
   hyphens: auto;
 }
@@ -95,13 +103,13 @@ a {
 
   &.internal {
     text-decoration: none;
-    background-color: var(--highlight);
+    background-color: var(--textHighlight);
     padding: 0 0.1rem;
     border-radius: 5px;
     line-height: 1.4rem;
 
     &.broken {
-      color: var(--secondary);
+      color: var(--clrred);
       opacity: 0.5;
       transition: opacity 0.2s ease;
       &:hover {
@@ -137,6 +145,7 @@ a {
 
 .desktop-only {
   display: initial;
+  height: 50%;
   &.flex-component {
     display: flex;
   }
@@ -258,6 +267,7 @@ a {
         position: initial;
         height: unset;
         width: 100%;
+        height: 70%;
         flex-direction: row;
         padding: 0;
         & > * {
@@ -348,12 +358,6 @@ input[type="checkbox"] {
   }
 }
 
-blockquote {
-  margin: 1rem 0;
-  border-left: 3px solid var(--secondary);
-  padding-left: 1rem;
-  transition: border-color 0.2s ease;
-}
 
 h1,
 h2,
@@ -541,7 +545,7 @@ p {
 th {
   text-align: left;
   padding: 0.4rem 0.7rem;
-  border-bottom: 2px solid var(--gray);
+  border-bottom: 2px solid var(--b4);
 }
 
 td {
@@ -549,7 +553,7 @@ td {
 }
 
 tr {
-  border-bottom: 1px solid var(--lightgray);
+  border-bottom: 1px solid var(--b4);
   &:last-child {
     border-bottom: none;
   }
@@ -640,4 +644,10 @@ iframe.pdf {
   background: var(--secondary);
   transition: width 0.2s ease;
   z-index: 9999;
+}
+
+
+.center{
+  background-color: rgba(var(--bb0rgb), 0.75) !important;
+  box-shadow: 0 0 100px 100px rgba(var(--bb0rgb), 0.75);
 }

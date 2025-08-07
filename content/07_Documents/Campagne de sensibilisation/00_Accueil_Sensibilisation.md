@@ -7,16 +7,16 @@ Chaque fiche fournit un cadre opérationnel pour déployer efficacement une acti
 
 ## Sommaire
 
-- [[1_Phishing|Phishing (hameçonnage)]]
-- [[2_Mobile_Securite|Sécurité des smartphones et BYOD]]
-- [[3_Verrouillage_Poste|Verrouillage des postes de travail]]
-- [[4_Motdepasse_MFA|Mots de passe et authentification multifacteur (MFA)]]
-- [[5_Teletravail_Deplacement|Sécurité en télétravail et déplacements]]
-- [[5B_Wifi_Public|Dangers du Wi-Fi public]]
-- [[6_Info_Sensible_Visible|Informations sensibles visibles]]
-- [[7_Ingenierie_Sociale|Ingénierie sociale et manipulation]]
-- [[8_Reaction_Incident|Réagir à un incident de sécurité]]
-- [[9_QRCode|QR Code malveillant]]
+- [[07_Documents/Campagne-de-sensibilisation/1_Phishing|Phishing (hameçonnage)]]
+- [[07_Documents/Campagne-de-sensibilisation/2_Mobile_Securite|Sécurité des smartphones et BYOD]]
+- [[07_Documents/Campagne-de-sensibilisation/3_Verrouillage_Poste|Verrouillage des postes de travail]]
+- [[07_Documents/Campagne-de-sensibilisation/4_Motdepasse_MFA|Mots de passe et authentification multifacteur (MFA)]]
+- [[07_Documents/Campagne-de-sensibilisation/5_Teletravail_Deplacement|Sécurité en télétravail et déplacements]]
+- [[07_Documents/Campagne-de-sensibilisation/5B_Wifi_Public|Dangers du Wi-Fi public]]
+- [[07_Documents/Campagne-de-sensibilisation/6_Info_Sensible_Visible|Informations sensibles visibles]]
+- [[07_Documents/Campagne-de-sensibilisation/7_Ingenierie_Sociale|Ingénierie sociale et manipulation]]
+- [[07_Documents/Campagne-de-sensibilisation/8_Reaction_Incident|Réagir à un incident de sécurité]]
+- [[07_Documents/Campagne-de-sensibilisation/9_QRCode|QR Code malveillant]]
 
 ---
 

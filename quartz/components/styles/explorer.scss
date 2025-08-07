@@ -97,7 +97,7 @@ button.desktop-explorer {
   text-align: left;
   cursor: pointer;
   padding: 0;
-  color: var(--dark);
+  color: var(--clrtxt);
   display: flex;
   align-items: center;
 
@@ -121,13 +121,16 @@ button.desktop-explorer {
     overscroll-behavior: contain;
 
     & li > a {
-      color: var(--dark);
-      opacity: 0.75;
+      color: var(--clrtxt);
+      opacity: 1;
       pointer-events: all;
-
+      &:hover{
+        color: var(--plnhdcl3);
+      }
+        
       &.active {
         opacity: 1;
-        color: var(--tertiary);
+        color: var(--plnhdcl3);
       }
     }
   }
@@ -146,10 +149,10 @@ button.desktop-explorer {
     overflow: hidden;
     margin-left: 6px;
     padding-left: 0.8rem;
-    border-left: 1px solid var(--lightgray);
+    border-left: 2px solid var(--w3);
   }
 }
-
+/* 
 .folder-container {
   flex-direction: row;
   display: flex;
@@ -201,7 +204,7 @@ button.desktop-explorer {
   backface-visibility: visible;
   flex-shrink: 0;
 }
-
+ */
 li:has(> .folder-outer:not(.open)) > .folder-container > svg {
   transform: rotate(-90deg);
 }
