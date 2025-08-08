@@ -1,3 +1,8 @@
+---
+title: "Plateforme Intégrée de Lexique, d’Outils, de Tutoriels et d’Éducation"
+description: "Plateforme de formation dédiée aux Responsables de la Sécurité des Systèmes d’Information.  Regroupe cours, outils et ressources pour développer et renforcer les compétences clés d’un RSSI."
+---
+
 ![[home2.png|300]]
 
 <center>Plateforme Intégrée de Lexique, d’Outils, de Tutoriels et d’Éducation</center>
