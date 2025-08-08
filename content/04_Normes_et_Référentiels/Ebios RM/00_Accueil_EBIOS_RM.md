@@ -11,7 +11,7 @@ Bienvenue dans ce module complet sur **EBIOS Risk Manager**, la méthode frança
 - [[04_Normes_et_Référentiels/Ebios-RM/01_Introduction_EBIOS_RM|Introduction à EBIOS RM]]
 - [[04_Normes_et_Référentiels/Ebios-RM/02_Cadres_et_Definitions|Cadres et définitions]]
 - [[04_Normes_et_Référentiels/Ebios-RM/03_Vue_dEnsemble_Demarche|Vue d’ensemble de la démarche]]
-- [[04_Normes_et_Référentiels/Ebios-RM/04_Atelier_1_Perìmetre_Etude|Atelier 1 – Périmètre de l’étude]]
+- [[04_Normes_et_Référentiels/Ebios-RM/04_Atelier_1_Perimetre_Etude|Atelier 1 – Périmètre de l’étude]]
 - [[04_Normes_et_Référentiels/Ebios-RM/05_Atelier_2_Couples_SR_OV|Atelier 2 – Couples SR/OV]]
 - [[04_Normes_et_Référentiels/Ebios-RM/06_Atelier_3_Strategie_Menaces|Atelier 3 – Cartographie de menace stratégique]]
 - [[04_Normes_et_Référentiels/Ebios-RM/07_Atelier_4_Scenarios_Operationnels|Atelier 4 – Scénarios opérationnels]]

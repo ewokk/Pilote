@@ -330,7 +330,12 @@ hr {
 .page>#quartz-body .sidebar{
     padding:  3rem 2rem 2rem
 }
-
+.page>#quartz-body .sidebar.left:has(.explorer) {
+    background-color: rgba(var(--bb0rgb), 0.75) !important;
+}
+.explorer:not(.collapsed)>.explorer-content {
+        background-color: rgba(var(--bb0rgb), 0.95) !important;
+}
 .footnotes {
     display: none;
 }

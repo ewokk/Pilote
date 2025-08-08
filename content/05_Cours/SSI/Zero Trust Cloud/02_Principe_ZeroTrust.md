@@ -55,4 +55,3 @@
 | Périmètre               | Délimité physiquement   | Basé sur les identités et règles |
 | Gestion des flux        | Firewall IP             | Contrôle logique, dynamique   |
 | Cloisonnement           | Réseau/physique         | Règles sur mesure par app/identité |
-

@@ -5,6 +5,7 @@
 Le modèle **Zero Trust** a été théorisé par **John Kindervag (Forrester)** en 2010, en réaction à la sécurité périmétrique traditionnelle ("moat and castle").
 
 Le terme "Zero Trust" a été introduit par **Forrester Research en 2010** puis formalisé dans :
+
 - la norme **NIST SP 800-207**
 - les modèles industriels : **Google BeyondCorp**, **Microsoft Zero Trust**, **CISA**
 
@@ -60,6 +61,7 @@ Chaque requête ou tentative d’accès est considérée comme potentiellement h
 ## Evolution vers le Cloud
 
 Le Cloud a accéléré l’adoption du Zero Trust en rendant :
+
 - la **segmentation physique impossible**
 - les **flux réseau opaques** (chiffrement, proxy)
 - la **centralisation de l’IAM indispensable**
