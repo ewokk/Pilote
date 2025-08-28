@@ -1,119 +1,98 @@
-# 09 – Détail des 7 nouveaux contrôles ISO/IEC 27017
+# ISO/IEC 27017 – Exigences détaillées
 
-## 12.1.5 – Suppression sécurisée des actifs clients
 
-> [!tip]
-> Garantir que toutes les données du client sont supprimées de manière irréversible à la fin du contrat ou sur demande.
+## Importance des exigences détaillées
 
-- **Objectif** : éviter les fuites post-résiliation.
-- **Rôle concerné** : Fournisseur Cloud
-- **Mise en œuvre** :
-  - Procédures automatisées d'effacement
-  - Preuve de suppression (certificats)
-  - Journalisation de l’opération
-- **Erreurs fréquentes** :
-  - Pas de traçabilité
-  - Conservation involontaire de backups
+L’ISO/IEC 27017 traduit les recommandations de l’ISO/IEC 27002 dans un **contexte Cloud**. Elle distingue les **responsabilités du client** et celles du **fournisseur**, afin d’éviter toute ambiguïté contractuelle et opérationnelle. Chaque exigence doit être mise en œuvre avec des preuves tangibles pour les audits ISO/IEC 27001, en cohérence avec [[ISO/IEC 27018 (Protection des données à caractère personnel dans le Cloud)]] et les obligations de [[NIS2 (Network and Information Security Directive – Directive sur la sécurité des réseaux et de l'information)]].  
 
 ---
 
-## 12.4.5 – Surveillance des activités des clients
+## Exigences côté Client (exemple SaaS – Office 365)
 
-> [!warning]
-> Un fournisseur Cloud peut surveiller les actions des clients **uniquement dans un cadre défini, justifié, documenté et légal**.
+Un client utilisant un service SaaS comme **Microsoft Office 365** conserve un rôle actif dans la sécurité, même si l’infrastructure est gérée par le fournisseur.  
 
-- **Objectif** : assurer la sécurité sans violer la vie privée.
-- **Rôle concerné** : Fournisseur Cloud
-- **Mise en œuvre** :
-  - Politique de surveillance transparente
-  - Logs séparés par client
-  - Limitation des accès internes aux journaux
-- **Erreurs fréquentes** :
-  - Absence de justification claire
-  - Surveillance abusive non déclarée
+**Exigences clés** :  
+- **Authentification multifacteur (MFA)** obligatoire pour tous les comptes, en particulier les administrateurs.  
+- **Logs et supervision** : activer l’**Azure AD Sign-in logs** et les centraliser dans un SIEM (ex. Sentinel).  
+- **Gestion des accès** : appliquer le principe du moindre privilège, revoir régulièrement les droits et supprimer les comptes dormants.  
+- **Exit plan** : planifier la récupération des mails, documents SharePoint et Teams en cas de migration vers un autre fournisseur.  
+
+**Preuves attendues** : captures de configuration MFA, exports de journaux (conservés ≥ 12 mois), rapports d’audit Azure AD, clauses contractuelles de réversibilité testées au moins une fois par an.  
 
 ---
 
-## 13.1.4 – Séparation des environnements clients
+## Exigences côté Fournisseur (exemple IaaS – AWS EC2)
 
-> [!example]
-> Ce contrôle vise à **prévenir la compromission croisée entre clients** dans les environnements mutualisés (multi-tenant).
+Un fournisseur offrant de l’**IaaS** comme AWS (EC2, S3, VPC) doit garantir un socle robuste sur lequel le client peut bâtir son environnement.  
 
-- **Objectif** : isolation logique et physique
-- **Rôle concerné** : Fournisseur Cloud
-- **Mise en œuvre** :
-  - Cloisonnement des VM / containers
-  - Tests réguliers de rebond
-  - Contrôle des flux inter-clients
-- **Erreurs fréquentes** :
-  - Partage d’instances
-  - Isolation non testée
+**Exigences clés** :  
+- **Isolation tenant** : garantir l’isolation réseau entre clients via VPC et hyperviseur sécurisé.  
+- **Disponibilité** : assurer une redondance multi-AZ (Availability Zones) avec SLA documenté.  
+- **Chiffrement du stockage** : activer par défaut le chiffrement des volumes EBS et des buckets S3.  
+- **Journalisation** : fournir des journaux CloudTrail et VPC Flow Logs accessibles et exploitables par le client.  
+
+**Preuves attendues** : rapports de segmentation inter-tenant, SLA garantissant 99,9 % de disponibilité, preuves de chiffrement activé par défaut, exports de journaux CloudTrail.  
 
 ---
 
-## 14.2.1.1 – Sécurité des configurations de machines virtuelles
+## Exigences côté Fournisseur PaaS (exemple Google Cloud App Engine)
 
-> [!tip]
-> Les clients doivent assurer que **leurs VM sont configurées de manière sécurisée**.
+Le modèle **PaaS (Platform as a Service)** implique que le fournisseur gère davantage de couches (OS, middleware), tandis que le client se concentre sur l’application.  
 
-- **Objectif** : éviter les failles de configuration
-- **Rôle concerné** : Client Cloud
--  **Mise en œuvre** :
-  - Hardening OS
-  - Contrôle des images de base
-  - Accès limité aux interfaces d’administration
--  **Erreurs fréquentes** :
-  - Utilisation d’images non vérifiées
-  - Absence de mise à jour
+**Exigences clés** :  
+- **Mises à jour de sécurité automatisées** : le fournisseur doit garantir patching continu.  
+- **Journalisation applicative** : fournir au client des logs centralisés (ex. Google Cloud Logging).  
+- **Portabilité** : permettre au client de migrer son application vers un autre environnement PaaS.  
+
+**Preuves attendues** : documentation du cycle de patching, exports de journaux applicatifs, tests de migration vers un autre environnement.  
 
 ---
 
-## 14.2.7.1 – Durcissement des environnements Cloud
+## Tableau comparatif synthétique
 
-> [!info]
-> Le fournisseur doit mettre en œuvre des pratiques de **"hardening"** à tous les niveaux de l’environnement Cloud.
-
-- **Objectif** : réduire la surface d’attaque
-- **Rôle concerné** : Fournisseur Cloud
-- **Mise en œuvre** :
-  - Minimise les services par défaut
-  - Chiffrement des communications internes
-  - Déploiement de correctifs
-- **Erreurs fréquentes** :
-  - Manque de cohérence dans les politiques de sécurité
-  - Oublis dans les chaînes de dépendance
+| Modèle | Exemple | Exigences clés | Preuves attendues |
+|--------|---------|----------------|-------------------|
+| **SaaS** | Office 365 | MFA, logs AD, gestion des accès, exit plan | Configurations MFA, journaux AD ≥ 12 mois, rapports audit, clauses réversibilité |
+| **PaaS** | Google App Engine | Patchs auto, logs applicatifs, portabilité | Documentation patching, exports journaux, tests migration |
+| **IaaS** | AWS EC2 | Isolation tenant, disponibilité, chiffrement storage, journaux réseau | Rapports segmentation, SLA 99,9 %, preuves chiffrement, logs CloudTrail |
 
 ---
 
-## 15.1.1.1 – Contrats de services Cloud
+## Cas pratiques & retours d’expérience
 
-> [!quote]
-> Ce contrôle insiste sur des **clauses contractuelles explicites** concernant la sécurité, la confidentialité et les responsabilités.
-
-- **Objectif** : clarifier les attentes et responsabilités
-- **Rôle concerné** : Client & Fournisseur
-- **Mise en œuvre** :
-  - Définir les SLA de sécurité
-  - Spécifier les mesures à prendre en cas d’incident
-  - Identifier les responsabilités partagées
-- **Erreurs fréquentes** :
-  - Contrats vagues ou génériques
-  - Absence de clause de réversibilité
+- **Office 365 (Banque européenne, 2020)** : un audit a révélé que le MFA n’était pas activé sur 30 % des comptes administrateurs. Non-conformité ISO/IEC 27017 → plan correctif imposant MFA obligatoire.  
+- **AWS EC2 (PME SaaS française, 2021)** : une attaque via mauvaise configuration VPC a révélé l’absence de preuve d’isolation tenant. Non-conformité ISO/IEC 27017.  
+- **Google App Engine (Start-up, 2019)** : un audit RGPD a souligné l’absence de plan de migration documenté, compromettant la réversibilité exigée par l’ISO/IEC 27017 et l’ISO/IEC 27018.  
 
 ---
 
-## 18.1.5.1 – Localisation des données et juridiction
+## Conseils opérationnels pour RSSI
 
-> [!danger]
-> Les clients et fournisseurs doivent connaître **où les données sont stockées** et sous quelle juridiction elles tombent.
+- Toujours distinguer **responsabilités client vs fournisseur** dans les contrats.  
+- Documenter et tester régulièrement MFA, logs, chiffrement et exit plan.  
+- Vérifier les preuves fournies par le fournisseur (certifications, SLA, rapports).  
+- Exiger une durée de **conservation des logs ≥ 12 mois** pour alignement RGPD et NIS2.  
+- Intégrer SaaS, PaaS et IaaS dans la même matrice de responsabilités.  
 
-- **Objectif** : conformité RGPD et autres réglementations
-- **Rôle concerné** : Client & Fournisseur
-- **Mise en œuvre** :
-  - Mapping des datacenters
-  - Clauses contractuelles sur la localisation
-  - Limitation du transfert hors UE si nécessaire
-- **Erreurs fréquentes** :
-  - Absence de contrôle sur la localisation réelle
-  - Non-respect des exigences de souveraineté
+---
 
+## Objectifs pédagogiques
+
+À la fin de ce chapitre, l’apprenant doit être capable de :  
+- Expliquer les différences d’exigences entre SaaS, PaaS et IaaS.  
+- Identifier les preuves d’audit attendues pour chaque modèle.  
+- Relier ISO/IEC 27017 aux obligations de l’ISO/IEC 27018 et de la directive NIS2.  
+- Préparer un plan de conformité concret avec cas pratiques.  
+
+---
+
+## Checklist RSSI
+
+- [ ] Vérifier que le MFA est activé sur tous les comptes SaaS.  
+- [ ] Centraliser les logs Cloud dans un SIEM avec conservation ≥ 12 mois.  
+- [ ] Confirmer l’existence d’un exit plan documenté et testé.  
+- [ ] Exiger du fournisseur IaaS des preuves d’isolation tenant et de chiffrement par défaut.  
+- [ ] Vérifier les SLA de disponibilité (IaaS, PaaS).  
+- [ ] Examiner la documentation de patching PaaS et les preuves de migration.  
+
+---

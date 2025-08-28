@@ -1,7 +1,7 @@
 # Active Directory
 
-> **Type** : outil  `#outil`  
-> **Niveau** : intermédiaire `#intermédiaire`  
+> **Type** : outil 
+> **Niveau** : intermédiaire
 > **Contexte** : gouvernance, défensif, réseau
 
 ---

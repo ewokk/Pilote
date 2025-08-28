@@ -1,8 +1,8 @@
 # ABAC
 
 > **Type** : concept
-> **Niveau** : intermédiaire `#intermédiaire`  
-> **Contexte** : gouvernance, défensif, cloud `#cloud`
+> **Niveau** : intermédiaire  
+> **Contexte** : gouvernance, défensif, cloud `
 
 ---
 

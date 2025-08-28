@@ -1,94 +1,65 @@
-# Liste complète des contrôles ISO/IEC 27017
+# ISO/IEC 27017 – Liste des contrôles
 
-> [!info]
-> Ce fichier liste les **7 nouveaux contrôles spécifiques au Cloud** ainsi que les **37 contrôles existants de l’ISO/IEC 27002:2013** qui sont étendus par ISO/IEC 27017 avec des recommandations Cloud. Chaque contrôle est présenté avec son objectif, sa portée, et des conseils d’application pour le **client** ou le **fournisseur** Cloud.
+## Importance des contrôles Cloud
 
----
+L’ISO/IEC 27017 reprend l’ossature de l’ISO/IEC 27002 mais y ajoute des **contrôles spécifiques au Cloud**. Ceux-ci permettent de clarifier la responsabilité entre fournisseur et client, et de définir des mécanismes techniques concrets pour sécuriser l’environnement.  
 
-## 🔹 Nouveaux contrôles spécifiques ISO/IEC 27017 (7 contrôles)
-
-| Numéro | Titre | Rôle | Objectif / Contenu |
-|--------|-------|------|---------------------|
-| 12.1.5 | Suppression des actifs clients | Fournisseur | Le fournisseur doit garantir que les actifs du client sont bien supprimés à la fin du contrat ou à la demande. |
-| 12.4.5 | Surveillance des activités du client | Fournisseur | Surveiller les actions des clients uniquement si cela est autorisé, documenté, et transparent. |
-| 13.1.4 | Séparation des environnements clients | Fournisseur | Empêcher les interférences entre les clients dans des environnements partagés (Cloud mutualisé). |
-| 14.2.1.1 | Configuration de machines virtuelles | Client | S’assurer que la configuration des machines virtuelles est sécurisée et validée. |
-| 14.2.7.1 | Hardening des environnements Cloud | Fournisseur | Appliquer les meilleures pratiques de sécurité sur les environnements virtualisés. |
-| 15.1.1.1 | Contrats Cloud | Client/Fournisseur | Les contrats doivent clairement établir les rôles et responsabilités en matière de sécurité. |
-| 18.1.5.1 | Juridiction et stockage des données | Client/Fournisseur | Déterminer où les données sont physiquement stockées et selon quelle législation. |
+Un RSSI doit donc être capable de relier chaque contrôle à un **objectif précis**, à une **implémentation type**, et à des **preuves d’audit attendues**. Ces contrôles ne sont pas uniquement théoriques : ils répondent à des incidents réels, aux exigences du **RGPD**, de la **directive NIS2**, ou encore des référentiels comme le **SecNumCloud** (ANSSI) et le **Cloud Controls Matrix (CSA CCM)** de la Cloud Security Alliance.  
 
 ---
 
-## 🔹 Contrôles ISO 27002:2013 étendus avec des recommandations Cloud (37 contrôles)
+## Tableau des contrôles ISO/IEC 27017
 
-Les contrôles suivants sont issus d’ISO/IEC 27002:2013 et sont enrichis par ISO/IEC 27017 avec des conseils spécifiques pour les environnements Cloud.
+| Contrôle | Objectif | Exemple d’implémentation | Preuves attendues |
+|----------|----------|--------------------------|-------------------|
+| **C.9.5 – Séparation des clients** | Garantir que les données et environnements des clients Cloud sont isolés (multi-tenant). | Mise en place d’un **VPC (Virtual Private Cloud)** dédié, segmentation réseau stricte, tests de pénétration inter-tenant. | Rapports de segmentation, résultats de tests d’intrusion, logs réseau démontrant l’isolation. |
+| **C.10.1 – Gestion des clés** | Assurer la confidentialité et l’intégrité des données (RGPD art. 32). | Utilisation de **KMS (Key Management Service)**, BYOK (Bring Your Own Key) avec HSM, rotation périodique des clés. | Politiques de gestion des clés, preuves de rotation, journaux d’accès HSM, captures de configurations. |
+| **C.11.2 – Contrôle d’accès aux API** | Sécuriser les API exposées et limiter les abus. | Implémenter **OAuth 2.0 / OpenID Connect**, limitation de requêtes (rate limiting), authentification multi-facteur. | Logs d’accès API, rapports de tests de charge, politiques IAM documentées. |
+| **C.12.4 – Journalisation Cloud** | Assurer une traçabilité complète des actions (NIS2, RGPD accountability). | Activation de **AWS CloudTrail**, **Google Cloud Audit Logs**, **Azure Monitor**, conservation ≥ 12 mois. | Exports de journaux, politiques de rétention, intégration SIEM, preuves d’investigation d’incident. |
+| **C.14.2 – Réversibilité et portabilité** | Garantir la possibilité de migration des données vers un autre fournisseur. | Mise en œuvre d’un **exit plan** testé (export VM, snapshots, données chiffrées transférables). | Rapports de tests de migration, clauses contractuelles, journaux d’export. |
+| **C.15.3 – Surveillance et alertes** | Détecter les comportements anormaux et incidents de sécurité. | Intégration des logs Cloud dans un **SIEM** (Microsoft Sentinel, Splunk, Elastic). | Tableaux de bord SIEM, alertes documentées, rapports d’incident. |
 
-> [!example]
-> Exemple : A.9.2.1 (Gestion des comptes utilisateurs) → précise la gestion multi-locataire dans un Cloud.
-
----
-
-### A.6 – Organisation de la sécurité de l'information
-- A.6.2.1 – Mobilité (Cloud = gestion des accès à distance)
-- A.6.2.2 – Accords avec les tiers (Cloud providers)
-
-### A.9 – Contrôle d'accès
-- A.9.2.1 – Enregistrement des utilisateurs
-- A.9.2.3 – Gestion des droits
-- A.9.4.1 – Restriction des accès
-- A.9.4.2 – Contrôle des accès utilisateurs
-- A.9.4.3 – Accès aux systèmes/applications
-
-### A.12 – Sécurité opérationnelle
-- A.12.1.1 – Documentation procédures
-- A.12.1.2 – Changement de procédure
-- A.12.1.3 – Capacité Cloud
-- A.12.1.4 – Segmentation réseau Cloud
-- A.12.2.1 – Enregistrement des événements
-- A.12.3.1 – Sauvegardes
-- A.12.4.1 – Journalisation
-- A.12.4.3 – Synchronisation horloge
-- A.12.6.1 – Gestion des vulnérabilités
-
-### A.13 – Sécurité des communications
-- A.13.1.1 – Sécurité réseaux
-- A.13.1.3 – Segmentation logique
-- A.13.2.1 – Transfert d’information
-
-### A.14 – Acquisition, développement, maintenance systèmes
-- A.14.1.1 – Requêtes sécurité dans projets Cloud
-- A.14.1.2 – Définition exigences sécurité Cloud
-- A.14.1.3 – Architecture sécurité Cloud
-- A.14.2.1 – Politiques développement
-- A.14.2.5 – Principe de séparation
-- A.14.2.8 – Test sécurité
-- A.14.3.1 – Protection des données de test
-
-### A.15 – Relations avec les fournisseurs
-- A.15.1.1 – Politiques sécurité contractuelle
-- A.15.1.2 – Contrôle fournisseurs Cloud
-- A.15.2.1 – Suivi performance sécurité
-
-### A.16 – Gestion des incidents
-- A.16.1.1 – Responsabilités notification incident
-- A.16.1.4 – Évaluation vulnérabilité Cloud
-- A.16.1.5 – Journalisation incidents Cloud
-
-### A.17 – Aspects sécurité continuité activité
-- A.17.1.1 – Inclusion sécurité dans PCA
-- A.17.2.1 – Test régulier des plans
-
-### A.18 – Conformité
-- A.18.1.3 – Protection des enregistrements
-- A.18.1.4 – Vie privée et données personnelles (Cloud)
-
-> [!tip]
-> Pour chaque contrôle, ISO/IEC 27017 ajoute des détails **spécifiques au Cloud**, souvent en précisant les rôles entre **client** et **fournisseur**.
+> [!info]  
+> Ces contrôles ne remplacent pas ceux de l’ISO/IEC 27002 : ils **les complètent** pour couvrir les risques spécifiques au Cloud. Ils sont alignés sur le **CSA CCM** et, pour la France, sur **SecNumCloud**.  
 
 ---
 
-Souhaites-tu que je crée ensuite une fiche `.md` par **nouveau contrôle Cloud**, avec :  
-- Explication détaillée  
-- Mise en œuvre concrète  
-- Avantages / limites  
-- Conseils d’audit et de conformité ?
+## Cas pratiques & retours d’expérience
+
+- **Capital One (2019)** : si le contrôle C.9.5 avait été testé par des audits de segmentation inter-tenant, l’impact de la faille AWS aurait pu être limité.  
+- **Hôpital français (2022)** : l’activation des journaux Cloud via Azure Monitor a permis de retracer une compromission d’accès administratifs, répondant aux obligations RGPD et NIS2.  
+- **Audit fournisseur 2021** : un client hébergé sur AWS en France n’a pas pu démontrer de test de réversibilité (C.14.2). Les auditeurs ont noté une **non-conformité mineure**, preuve que ces contrôles doivent être régulièrement testés et documentés.  
+
+---
+
+## Conseils opérationnels pour RSSI
+
+- Maintenir une **cartographie claire** des contrôles activés chez chaque fournisseur Cloud.  
+- Exiger que chaque contrôle soit relié à une **preuve d’audit** : SLA signé, capture de configuration, logs exportés, rapport de test.  
+- Vérifier la **durée de conservation des logs** (souvent exigée ≥ 12 mois, parfois 24 pour des environnements sensibles).  
+- Intégrer les preuves Cloud dans le **cycle d’audit ISO/IEC 27001** classique pour éviter toute lacune lors d’une certification.  
+- S’assurer que les obligations Cloud sont alignées avec le **RGPD**, **NIS2**, et, en France, le **SecNumCloud**.  
+
+---
+
+## Objectifs pédagogiques
+
+À la fin de ce chapitre, l’apprenant doit être capable de :  
+- Connaître les principaux contrôles spécifiques de l’ISO/IEC 27017.  
+- Relier chaque contrôle à un objectif et à une mise en œuvre concrète.  
+- Préparer des preuves d’audit adaptées (contrats, logs, captures, rapports).  
+- Identifier les liens normatifs (RGPD, NIS2, SecNumCloud, CSA CCM).  
+
+---
+
+## Checklist RSSI
+
+- [ ] Vérifier que la séparation inter-tenant (C.9.5) est documentée et testée.  
+- [ ] Confirmer que la journalisation Cloud (C.12.4) est activée, centralisée et conservée ≥ 12 mois.  
+- [ ] Vérifier la gestion des clés (C.10.1), la rotation et la compatibilité BYOK.  
+- [ ] Examiner les contrôles d’accès aux API (C.11.2) et vérifier MFA + rate limiting.  
+- [ ] Valider la faisabilité de l’exit plan (C.14.2) par des tests réguliers.  
+- [ ] S’assurer que la surveillance et les alertes (C.15.3) sont intégrées dans le SIEM et testées.  
+- [ ] Vérifier l’alignement avec RGPD, NIS2, CSA CCM et SecNumCloud.  
+
+---

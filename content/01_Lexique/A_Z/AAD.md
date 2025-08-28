@@ -1,8 +1,8 @@
 # AAD
 
 > **Type** : acronyme
-> **Niveau** : intermédiaire `#intermédiaire`  
-> **Contexte** : gouvernance, cloud `#cloud`, défensif
+> **Niveau** : intermédiaire
+> **Contexte** : gouvernance, cloud, défensif
 
 ---
 
