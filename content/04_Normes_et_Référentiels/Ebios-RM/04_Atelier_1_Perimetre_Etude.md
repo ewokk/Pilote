@@ -5,7 +5,8 @@
 L’atelier 1 a pour objectif de définir **ce qu’il faut protéger**.  
 Il constitue la fondation de toute la démarche EBIOS RM. Un périmètre mal défini rendra l’ensemble de l’analyse inefficace, voire inutilisable.  
 
-Les points clés à identifier sont :  
+Les points clés à identifier sont :
+
 - Les **valeurs métier** critiques pour l’organisation.  
 - Les **événements redoutés** susceptibles de nuire à ces valeurs.  
 - Les **biens supports** permettant leur fonctionnement.  
@@ -32,6 +33,7 @@ Les points clés à identifier sont :
 ### Matrice Gravité
 
 La gravité peut être cotée selon plusieurs critères :  
+
 - Impact financier (pertes directes, coûts de remédiation).  
 - Atteinte à l’image et à la réputation.  
 - Conséquences réglementaires (sanctions RGPD, NIS2, DORA).  
@@ -56,6 +58,7 @@ Ces exemples montrent que le périmètre doit intégrer à la fois les actifs in
 
 > [!warning]  
 > **Les erreurs récurrentes dans l’atelier 1 compromettent toute l’analyse :**  
+>
 > - Définir un **périmètre trop large** : l’étude devient lourde, générique, et perd sa valeur opérationnelle.  
 > - Définir un **périmètre trop restreint** : on oublie des dépendances critiques (ex : prestataire cloud, infogérant).  
 > - Ne considérer que l’**IT technique** : l’analyse oublie les processus métier, les relations contractuelles et les obligations réglementaires.  
@@ -81,7 +84,8 @@ Ces exemples montrent que le périmètre doit intégrer à la fois les actifs in
 
 ## Objectifs pédagogiques
 
-À l’issue de l’atelier 1, l’apprenant est capable de :  
+À l’issue de l’atelier 1, l’apprenant est capable de :
+
 - Définir un périmètre d’analyse clair, incluant actifs internes et dépendances externes.  
 - Identifier les valeurs métier, événements redoutés et biens supports.  
 - Évaluer la gravité des impacts de manière multidimensionnelle.  

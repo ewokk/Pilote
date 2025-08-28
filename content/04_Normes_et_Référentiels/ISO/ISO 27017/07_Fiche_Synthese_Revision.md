@@ -1,6 +1,5 @@
 # ISO/IEC 27017 – Fiche Synthèse Révision
 
-
 ## Fiche de révision synthétique
 
 Cette fiche est conçue comme un **aide-mémoire rapide** pour RSSI, auditeurs et candidats à une certification. Elle résume les principaux contrôles ISO/IEC 27017 avec leur objectif, leur rattachement et les preuves attendues.
