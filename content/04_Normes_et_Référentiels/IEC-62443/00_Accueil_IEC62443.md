@@ -30,7 +30,7 @@ Bienvenue dans ce cours consacré à la norme **IEC 62443**, cadre international
 
 ## Contexte, origine et adoption OT
 
-Les premières publications **ISA‑99** au début des années 2000 ont posé les bases conceptuelles de la segmentation OT, des niveaux de sécurité et de la responsabilité partagée entre **exploitant**, **intégrateur** et **fournisseur**. L’**IEC** a ensuite normalisé et étendu ces travaux pour former la série **IEC 62443**, aujourd’hui adoptée dans les secteurs **énergie**, **chimie/pharma**, **transport**, **automobile**, **agroalimentaire**, **santé** et **défense**. Cette adoption est tirée par des incidents OT majeurs et par les obligations croissantes issues de [[Directive NIS 2 (NIS2 – Network and Information Security Directive 2)]] et des cadres de management tels qu’[[Système de management de la sécurité de l’information (ISO 27001 – Information Security Management System)]] ou [[Cadre de cybersécurité (NIST CSF – Cybersecurity Framework)]].
+Les premières publications **ISA‑99** au début des années 2000 ont posé les bases conceptuelles de la segmentation OT, des niveaux de sécurité et de la responsabilité partagée entre **exploitant**, **intégrateur** et **fournisseur**. L’**IEC** a ensuite normalisé et étendu ces travaux pour former la série **IEC 62443**, aujourd’hui adoptée dans les secteurs **énergie**, **chimie/pharma**, **transport**, **automobile**, **agroalimentaire**, **santé** et **défense**. Cette adoption est tirée par des incidents OT majeurs et par les obligations croissantes issues de Directive NIS 2 et des cadres de management tels qu’Système de management de la sécurité de l’information (ISO 27001) ou [[Cadre de cybersécurité (NIST CSF – Cybersecurity Framework)]].
 
 ---
 
@@ -79,5 +79,5 @@ Nous illustrons chaque axe par des cas **terrain** : **PLC/DCS**, **historians S
 - [ ] Confirmer la stratégie **zones/conduits** et les **SL** visés par zone.  
 - [ ] Exiger des fournisseurs/intégrateurs le **mapping FR/SR ↔ SL‑C/SL‑T/SL‑A** et un **Plan d’Assurance Sécurité** conforme **62443‑4‑1/4‑2**.  
 - [ ] Préparer les **preuves d’audit** : politiques OT, procédures de télémaintenance, journaux bastion, rapports FAT/SAT, plans de patching, configurations de pare‑feu.  
-- [ ] Aligner la trajectoire 62443 avec [[Directive NIS 2 (NIS2 – Network and Information Security Directive 2)]] et [[Système de management de la sécurité de l’information (ISO 27001 – Information Security Management System)]].
+- [ ] Aligner la trajectoire 62443 avec Directive NIS 2 et Système de management de la sécurité de l’information (ISO 27001).
 

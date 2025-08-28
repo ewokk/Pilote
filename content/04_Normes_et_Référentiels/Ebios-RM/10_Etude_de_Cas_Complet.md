@@ -1,6 +1,6 @@
 # Étude de cas – Mise en œuvre complète d’EBIOS RM
 
-Ce chapitre illustre la mise en œuvre intégrale de la méthode [[EBIOS Risk Manager (EBIOS RM – Expression des Besoins et Identification des Objectifs de Sécurité, Risk Manager)]], en la déclinant sur deux secteurs distincts : **Banque** et **Santé**.  
+Ce chapitre illustre la mise en œuvre intégrale de la méthode EBIOS RM, en la déclinant sur deux secteurs distincts : **Banque** et **Santé**.  
 Chaque étude suit la séquence des ateliers 1 → 5 et montre comment adapter la démarche aux réalités sectorielles.  
 
 ---

@@ -2,7 +2,7 @@
 
 ## Introduction générale
 
-La norme **ISO/IEC 27017** est une norme internationale de la famille ISO/IEC 27000, spécifiquement conçue pour encadrer les mesures de sécurité dans les environnements de services Cloud. Contrairement à l’[[ISO/IEC 27001 (Système de management de la sécurité de l'information – Information Security Management System)]], qui définit les exigences générales pour mettre en place un **SMSI**, l’ISO/IEC 27017 agit comme une **extension sectorielle** de l’[[ISO/IEC 27002 (Mesures de sécurité – Code of practice for information security controls)]] en adaptant ses recommandations aux réalités des environnements **SaaS (Software as a Service)**, **PaaS (Platform as a Service)** et **IaaS (Infrastructure as a Service)**.  
+La norme **ISO/IEC 27017** est une norme internationale de la famille ISO/IEC 27000, spécifiquement conçue pour encadrer les mesures de sécurité dans les environnements de services Cloud. Contrairement à l’ISO/IEC 27001 , qui définit les exigences générales pour mettre en place un **SMSI**, l’ISO/IEC 27017 agit comme une **extension sectorielle** de l’ISO/IEC 27002 en adaptant ses recommandations aux réalités des environnements **SaaS (Software as a Service)**, **PaaS (Platform as a Service)** et **IaaS (Infrastructure as a Service)**.  
 
 > [!info]  
 > L’ISO/IEC 27017 est un **guide de sécurité pour services Cloud** qui s’adresse à la fois aux fournisseurs et aux clients. Elle n’est pas certifiable seule, mais est très fréquemment intégrée comme référentiel complémentaire dans les audits et certifications ISO/IEC 27001.  
@@ -37,9 +37,9 @@ Historiquement, de nombreux incidents ont mis en évidence ce besoin : l’attaq
 L’ISO/IEC 27017 est rarement appliquée seule. Elle s’intègre dans un écosystème normatif plus large :  
 
 - Elle complète l’ISO/IEC 27001 et 27002 pour les SMSI.  
-- Elle est directement liée à l’[[ISO/IEC 27018 (Protection des données à caractère personnel dans le Cloud)]] qui se focalise sur les aspects de **protection des données personnelles** et sur les obligations des fournisseurs Cloud vis-à-vis du RGPD.  
+- Elle est directement liée à l’ISO/IEC 27018 qui se focalise sur les aspects de **protection des données personnelles** et sur les obligations des fournisseurs Cloud vis-à-vis du RGPD.  
 - Elle est également mise en perspective avec des cadres comme le référentiel **SecNumCloud** de l’ANSSI, qui impose des critères plus stricts pour les prestataires Cloud opérant en France et en Europe.  
-- Enfin, elle est en cohérence avec le **Cloud Controls Matrix (CSA CCM)** publié par la Cloud Security Alliance, et contribue à répondre aux attentes réglementaires européennes, notamment la directive [[NIS2 (Network and Information Security Directive – Directive sur la sécurité des réseaux et de l'information)]].  
+- Enfin, elle est en cohérence avec le **Cloud Controls Matrix (CSA CCM)** publié par la Cloud Security Alliance, et contribue à répondre aux attentes réglementaires européennes, notamment la directive NIS2.  
 
 Cette articulation est fondamentale : un RSSI qui met en œuvre ISO/IEC 27017 doit être capable de démontrer la compatibilité de ses pratiques avec plusieurs cadres complémentaires.  
 
@@ -60,7 +60,7 @@ Le référentiel s’adresse à plusieurs acteurs :
 
 - Comprendre le rôle et la portée de l’ISO/IEC 27017.  
 - Identifier les différences entre les contrôles de l’ISO/IEC 27002 et leur déclinaison Cloud dans l’ISO/IEC 27017.  
-- Situer ISO/IEC 27017 dans l’écosystème normatif global incluant [[ISO/IEC 27018 (Protection des données à caractère personnel dans le Cloud)]], [[NIS2 (Network and Information Security Directive – Directive sur la sécurité des réseaux et de l'information)]], [[SecNumCloud]] et [[Cloud Controls Matrix (CSA CCM)]].  
+- Situer ISO/IEC 27017 dans l’écosystème normatif global incluant ISO/IEC 27018, NIS2, SecNumCloud et [[Cloud Controls Matrix (CSA CCM)]].  
 - Être capable de présenter les obligations respectives du fournisseur Cloud et du client dans le cadre d’un audit.  
 
 ---
@@ -95,6 +95,6 @@ Pour un RSSI, l’ISO/IEC 27017 ne doit pas être perçue comme un texte théori
 - [ ] S’assurer que les journaux Cloud (AWS CloudTrail, Azure Monitor, etc.) sont activés et conservés pour une durée suffisante.  
 - [ ] Contrôler que les données sensibles sont chiffrées avec une gestion des clés documentée (ex : [[Gestion des clés (KMS – Key Management Service)]]).  
 - [ ] Comparer les pratiques internes avec les exigences de l’ISO/IEC 27018 pour le volet protection des données personnelles.  
-- [ ] Évaluer la conformité des pratiques Cloud avec [[SecNumCloud]] et [[NIS2 (Network and Information Security Directive – Directive sur la sécurité des réseaux et de l'information)]].  
+- [ ] Évaluer la conformité des pratiques Cloud avec SecNumCloud et NIS2.  
 
 ---

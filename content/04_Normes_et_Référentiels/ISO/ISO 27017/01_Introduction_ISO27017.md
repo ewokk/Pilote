@@ -37,7 +37,7 @@ Cas concret : une entreprise de santé utilisant un service SaaS hébergeant des
 
 L’adoption de l’ISO/IEC 27017 est stratégique pour toute organisation migrante vers le Cloud. Elle permet de :  
 - Donner confiance aux clients et partenaires en prouvant que la sécurité est intégrée dans les contrats Cloud.  
-- Répondre aux exigences réglementaires (RGPD, [[NIS2 (Network and Information Security Directive – Directive sur la sécurité des réseaux et de l'information)]], [[SecNumCloud]] en France).  
+- Répondre aux exigences réglementaires (RGPD, NIS2, SecNumCloud en France).  
 - Réduire les risques de litiges liés à une mauvaise compréhension de la répartition des responsabilités.  
 
 Historiquement, des entreprises comme **Dropbox (2011–2012)** ou **Evernote (2013)** ont été critiquées pour des failles de sécurité ou de confidentialité dans leurs environnements Cloud. Si l’ISO/IEC 27017 avait été appliquée, la transparence contractuelle et les preuves d’audit attendues auraient permis de mieux anticiper ces crises.  

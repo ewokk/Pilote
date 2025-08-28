@@ -5,9 +5,9 @@ Adopté en 2022 et applicable à partir du **17 janvier 2025**, ce règlement co
 
 L’objectif est clair : garantir que toutes les entités financières opérant dans l’Union européenne — des grandes banques systémiques aux start-ups fintech — soient capables de **résister**, de **répondre** et de **se rétablir** face aux incidents liés aux technologies de l’information et de la communication (TIC). Pour les **RSSI**, les **auditeurs** et les **décideurs IT**, comprendre et déployer DORA devient une priorité stratégique pour 2025–2026.
 
-DORA change la donne à plusieurs niveaux : il harmonise les exigences de résilience au niveau UE, fait entrer les **fournisseurs tiers critiques** (notamment le Cloud) dans le périmètre de supervision, et impose une logique de **preuve** (documentée, mesurable, vérifiable) comparable à l’esprit des audits [[ISO/IEC 27001 (ISO 27001 – Information Security Management)]] et aux exigences de [[RGPD (GDPR – General Data Protection Regulation)]], mais appliquée spécifiquement à la **résilience opérationnelle**.
+DORA change la donne à plusieurs niveaux : il harmonise les exigences de résilience au niveau UE, fait entrer les **fournisseurs tiers critiques** (notamment le Cloud) dans le périmètre de supervision, et impose une logique de **preuve** (documentée, mesurable, vérifiable) comparable à l’esprit des audits ISO/IEC 27001 et aux exigences de RGPD, mais appliquée spécifiquement à la **résilience opérationnelle**.
 
-Ce cours vous fournit : une lecture opérationnelle des obligations, des **cas concrets**, des **preuves d’audit attendues**, des **comparaisons** avec les autres cadres (dont [[Directive NIS2 (NIS2 – Network and Information Security 2)]], [[NIST Cybersecurity Framework (NIST CSF – Cybersecurity Framework)]], TIBER‑EU, Digital Finance Package, MiCA, DLT Pilot, Bâle), et des **outils actionnables** pour piloter la conformité.
+Ce cours vous fournit : une lecture opérationnelle des obligations, des **cas concrets**, des **preuves d’audit attendues**, des **comparaisons** avec les autres cadres (dont Directive NIS2, NIST Cybersecurity Framework, TIBER‑EU, Digital Finance Package, MiCA, DLT Pilot, Bâle), et des **outils actionnables** pour piloter la conformité.
 
 ---
 
@@ -31,7 +31,7 @@ Vous trouverez les artefacts que les régulateurs ou auditeurs demanderont : pol
 Nous détaillons le rôle du **Conseil/COMEX** (appétence au risque, supervision), du **RSSI** (pilotage et preuves), des métiers, de la conformité et des achats (tiers critiques), en explicitant l’articulation **juridique / métier / technique** et les exigences de **traçabilité** (décisions, arbitrages, preuves).
 
 **Comparaisons utiles et alignements.**  
-Chaque axe comporte un **pont de lecture** avec les cadres connexes : [[Directive NIS2 (NIS2 – Network and Information Security 2)]], [[RGPD (GDPR – General Data Protection Regulation)]], [[NIST Cybersecurity Framework (NIST CSF – Cybersecurity Framework)]], TIBER‑EU, Digital Finance Package (MiCA, DLT Pilot), exigences prudentielles (Bâle). L’objectif est de **mutualiser** les efforts (contrôles, KPI) et d’éviter les doublons.
+Chaque axe comporte un **pont de lecture** avec les cadres connexes : Directive NIS2, RGPD, NIST Cybersecurity Framework, TIBER‑EU, Digital Finance Package (MiCA, DLT Pilot), exigences prudentielles (Bâle). L’objectif est de **mutualiser** les efforts (contrôles, KPI) et d’éviter les doublons.
 
 **Conséquences opérationnelles pour le RSSI.**  
 Nous indiquons, chapitre par chapitre, **ce qu’il faut faire**, **comment le faire** et **comment le démontrer** : livrables attendus, jalons projet, métriques de performance et de résilience, modes de preuves, et préparation d’audit.

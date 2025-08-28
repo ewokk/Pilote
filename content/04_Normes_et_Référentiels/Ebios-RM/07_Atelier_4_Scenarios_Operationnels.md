@@ -24,7 +24,7 @@ Ils constituent un outil de dialogue efficace entre équipes techniques, métier
 ```
 
 Inspiré des frameworks :  
-- [[MITRE ATT&CK (MITRE ATT&CK – Adversarial Tactics, Techniques & Common Knowledge)]]  
+- MITRE ATT&CK 
 - Cyber Kill Chain (Lockheed Martin).  
 
 ---

@@ -3,9 +3,9 @@
 ## Objectif
 
 Comparer les trois cadres majeurs de gestion des risques cyber :  
-- [[ISO/IEC 27005 (ISO/IEC 27005 – Information security risk management)]].  
-- [[NIST RMF (NIST Risk Management Framework)]].  
-- [[EBIOS Risk Manager (EBIOS RM – Expression des Besoins et Identification des Objectifs de Sécurité, Risk Manager)]].  
+- ISO/IEC 27005.  
+- NIST RMF.  
+- EBIOS RM.  
 
 Ce comparatif permet aux RSSI et auditeurs de comprendre comment articuler les démarches dans des environnements multi-référentiels.
 

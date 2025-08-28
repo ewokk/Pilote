@@ -3,7 +3,7 @@
 
 ## Importance des exigences détaillées
 
-L’ISO/IEC 27017 traduit les recommandations de l’ISO/IEC 27002 dans un **contexte Cloud**. Elle distingue les **responsabilités du client** et celles du **fournisseur**, afin d’éviter toute ambiguïté contractuelle et opérationnelle. Chaque exigence doit être mise en œuvre avec des preuves tangibles pour les audits ISO/IEC 27001, en cohérence avec [[ISO/IEC 27018 (Protection des données à caractère personnel dans le Cloud)]] et les obligations de [[NIS2 (Network and Information Security Directive – Directive sur la sécurité des réseaux et de l'information)]].  
+L’ISO/IEC 27017 traduit les recommandations de l’ISO/IEC 27002 dans un **contexte Cloud**. Elle distingue les **responsabilités du client** et celles du **fournisseur**, afin d’éviter toute ambiguïté contractuelle et opérationnelle. Chaque exigence doit être mise en œuvre avec des preuves tangibles pour les audits ISO/IEC 27001, en cohérence avec ISO/IEC 27018 et les obligations de NIS2.  
 
 ---
 

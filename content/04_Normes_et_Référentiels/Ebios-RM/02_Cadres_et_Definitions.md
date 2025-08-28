@@ -7,7 +7,7 @@ Le **risque** en cybersécurité correspond à la combinaison de plusieurs élé
 - Une **source de risque** (adversaire, menace, facteur).  
 - Une **vraisemblance** (probabilité ou effort requis pour la matérialisation).  
 
-Cette approche correspond à la logique d’[[ISO/IEC 27005 (ISO/IEC 27005 – Information security risk management)]] et du [[NIST RMF (NIST Risk Management Framework)]], mais EBIOS RM insiste davantage sur la modélisation des intentions adverses et des scénarios.
+Cette approche correspond à la logique d’ISO/IEC 27005 et du NIST RMF, mais EBIOS RM insiste davantage sur la modélisation des intentions adverses et des scénarios.
 
 ---
 

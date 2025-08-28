@@ -73,9 +73,9 @@ La démarche DORA doit être **adossée à des référentiels reconnus** :
 
 | Outil / Référentiel | Finalité | Atouts | Preuves d’audit |  
 |---|---|---|---|  
-| [[ISO/IEC 27005 (ISO 27005 – Information Security Risk Management)]] | Gestion des risques SSI alignée ISO 27001 | Norme internationale reconnue | Registre risques, matrices, rapports |  
-| [[EBIOS Risk Manager (EBIOS RM – Expression des Besoins et Identification des Objectifs de Sécurité)]] | Méthode ANSSI centrée sur scénarios | Cas d’usage opérationnels, ateliers collaboratifs | Grilles d’analyse, scénarios, livrables ateliers |  
-| [[NIST Cybersecurity Framework (NIST CSF – Cybersecurity Framework)]] | Cadre structurant (Identify, Protect, Detect, Respond, Recover) | Lisible par COMEX, transversal | KPI/KRI, indicateurs de maturité |  
+|[ISO/IEC 27005] | Gestion des risques SSI alignée ISO 27001 | Norme internationale reconnue | Registre risques, matrices, rapports |  
+| EBIOS Risk Manager | Méthode ANSSI centrée sur scénarios | Cas d’usage opérationnels, ateliers collaboratifs | Grilles d’analyse, scénarios, livrables ateliers |  
+| NIST Cybersecurity Framework | Cadre structurant (Identify, Protect, Detect, Respond, Recover) | Lisible par COMEX, transversal | KPI/KRI, indicateurs de maturité |  
 
 ---
 

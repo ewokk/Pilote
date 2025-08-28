@@ -2,7 +2,7 @@
 
 ## Objectifs de la méthode
 
-**EBIOS Risk Manager (EBIOS RM – Expression des Besoins et Identification des Objectifs de Sécurité, Risk Manager)** est la méthode de référence française en matière d’analyse de risques cyber. Recommandée et maintenue par l’[[Agence nationale de la sécurité des systèmes d’information (ANSSI)]], elle poursuit trois grands objectifs :  
+**EBIOS Risk Manager (EBIOS RM – Expression des Besoins et Identification des Objectifs de Sécurité, Risk Manager)** est la méthode de référence française en matière d’analyse de risques cyber. Recommandée et maintenue par l’ANSSI, elle poursuit trois grands objectifs :  
 
 1. Identifier et évaluer les risques pesant sur un système, une organisation ou une chaîne de valeur.  
 2. Orienter les décisions de sécurité et prioriser les actions de protection.  
@@ -49,7 +49,7 @@ Une approche limitée à l’analyse IT aurait identifié les vulnérabilités, 
 EBIOS RM s’applique aussi bien :  
 - Aux systèmes complexes (OT, infrastructures critiques, SI multi-sites, environnements Cloud).  
 - Aux démarches d’analyse simplifiée ou ponctuelle (audit projet, conformité réglementaire, préparation à une certification ISO).  
-- Aux analyses croisées avec d’autres cadres : [[ISO/IEC 27005 (ISO/IEC 27005 – Information security risk management)]], [[NIST RMF (NIST Risk Management Framework)]], [[FAIR (Factor Analysis of Information Risk)]].  
+- Aux analyses croisées avec d’autres cadres : ISO/IEC 27005, NIST RMF, FAIR.  
 
 > [!quote]  
 > « EBIOS RM permet de mieux comprendre les intentions, capacités et scénarios d’attaque des adversaires potentiels, et de les traduire en décisions de gouvernance. »

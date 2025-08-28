@@ -42,7 +42,7 @@ Les entités doivent mettre en place des **mécanismes de partage d’informatio
 DORA contribue à :  
 - prévenir les **effets systémiques** (effet domino en cas d’incident majeur),  
 - renforcer la **confiance** des clients et partenaires,  
-- aligner l’Europe sur les **pratiques mondiales** (TIBER‑EU, [[NIST Cybersecurity Framework (NIST CSF – Cybersecurity Framework)]], Bâle).
+- aligner l’Europe sur les **pratiques mondiales** (TIBER‑EU, NIST, Bâle).
 
 ---
 

@@ -56,7 +56,7 @@ DORA **complète** le **RGPD** pour la **sécurité** des traitements (sans se s
 
 ## 1.6. Conséquences opérationnelles (mutualiser sans dupliquer)
 
-Un **RSSI** doit construire une **cartographie unique** des exigences et **mutualiser** les contrôles : politiques et comités communs (socle NIS2), registres et métriques **orientés DORA**, et un dispositif RGPD **orchestré** (DPO, DPIA, notification). Concrètement, on aligne le SMSI [[ISO/IEC 27001 (ISO 27001 – Information Security Management)]] pour servir de **châssis** documentaire, on ajoute les **preuves DORA** (gouvernance, tests de résilience, tiers critiques) et on raccorde les processus RGPD (registre, DPIA, violation). L’objectif est d’avoir **un corpus, plusieurs lectures** (DORA, NIS2, RGPD) plutôt que trois dispositifs parallèles.
+Un **RSSI** doit construire une **cartographie unique** des exigences et **mutualiser** les contrôles : politiques et comités communs (socle NIS2), registres et métriques **orientés DORA**, et un dispositif RGPD **orchestré** (DPO, DPIA, notification). Concrètement, on aligne le SMSI[ISO/IEC 27001  pour servir de **châssis** documentaire, on ajoute les **preuves DORA** (gouvernance, tests de résilience, tiers critiques) et on raccorde les processus RGPD (registre, DPIA, violation). L’objectif est d’avoir **un corpus, plusieurs lectures** (DORA, NIS2, RGPD) plutôt que trois dispositifs parallèles.
 
 ---
 

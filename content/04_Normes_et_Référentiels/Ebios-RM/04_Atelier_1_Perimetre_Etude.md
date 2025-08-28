@@ -3,7 +3,7 @@
 ## Objectif
 
 L’atelier 1 a pour objectif de définir **ce qu’il faut protéger**.  
-Il constitue la fondation de toute la démarche [[EBIOS Risk Manager (EBIOS RM – Expression des Besoins et Identification des Objectifs de Sécurité, Risk Manager)]]. Un périmètre mal défini rendra l’ensemble de l’analyse inefficace, voire inutilisable.  
+Il constitue la fondation de toute la démarche EBIOS RM. Un périmètre mal défini rendra l’ensemble de l’analyse inefficace, voire inutilisable.  
 
 Les points clés à identifier sont :  
 - Les **valeurs métier** critiques pour l’organisation.  

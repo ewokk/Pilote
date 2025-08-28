@@ -27,7 +27,7 @@ L’ISO/IEC 27017 devient réellement opérationnelle lorsqu’elle est appliqu�
 **Périmètre** : Un hôpital héberge les dossiers patients sur Microsoft Azure.  
 
 **Exigences principales** :  
-- **Protection des données personnelles** : application combinée ISO/IEC 27017 + [[ISO/IEC 27018 (Protection des données à caractère personnel dans le Cloud)]].  
+- **Protection des données personnelles** : application combinée ISO/IEC 27017 + ISO/IEC 27018.  
 - **Journalisation** des accès aux dossiers via Azure Monitor, avec conservation ≥ 24 mois (RGPD).  
 - **Chiffrement BYOK** : les clés sont gérées par l’hôpital dans un HSM interne.  
 - **Contrôles d’accès** : authentification forte (MFA, carte CPS pour les médecins).  

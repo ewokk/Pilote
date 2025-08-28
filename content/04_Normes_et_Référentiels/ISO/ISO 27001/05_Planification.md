@@ -4,7 +4,7 @@
 
 La planification d’un SMSI repose sur une analyse rigoureuse des risques, mais aussi sur l’anticipation des opportunités. La direction doit démontrer que la sécurité n’est pas seulement un centre de coûts mais aussi un levier de confiance et de compétitivité.  
 
-L’ISO/IEC 27001 recommande de s’appuyer sur des méthodes reconnues : **ISO/IEC 27005** pour le cadre méthodologique international et **[[EBIOS RM (EBIOS Risk Manager)]]** pour les organisations françaises, notamment dans les secteurs régulés.  
+L’ISO/IEC 27001 recommande de s’appuyer sur des méthodes reconnues : **ISO/IEC 27005** pour le cadre méthodologique international et **EBIOS RM** pour les organisations françaises, notamment dans les secteurs régulés.  
 
 Un plan de traitement des risques doit détailler les menaces, vulnérabilités, scénarios d’incident et mesures retenues (acceptation, transfert, réduction, évitement).  
 

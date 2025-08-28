@@ -30,7 +30,7 @@ DORA s’applique à plus de **20 catégories d’entités financières** opéra
 **Preuves** : cartographie des processus critiques, journaux d’incident marché, rapports de bascule et de tests d’intégrité des ordres.
 
 ### D. **Établissements de paiement et établissements de monnaie électronique**  
-**Exemples** : PSP, wallets, initiation de paiement (PIS), information sur les comptes (AIS) via DSP2/[[Open Banking (OB – Open Banking)]].  
+**Exemples** : PSP, wallets, initiation de paiement (PIS), information sur les comptes (AIS) via DSP2/Open Banking.  
 **Implications** : disponibilité des APIs, sécurité des parcours d’authentification forte, gestion **temps réel** des incidents affectant les paiements.  
 **Preuves** : KPIs d’API uptime/latence, registres fraude et disponibilité, notifications coordonnées (DORA/NIS2).
 

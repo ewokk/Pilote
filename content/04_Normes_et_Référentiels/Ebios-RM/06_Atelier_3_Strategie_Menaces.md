@@ -5,7 +5,7 @@
 L’atelier 3 vise à transformer les couples **Sources de Risque / Objectifs de Valeur (SR/OV)** en une **stratégie de menaces crédible**.  
 Il s’agit d’identifier comment un adversaire peut exploiter l’écosystème de l’organisation (partenaires, sous-traitants, flux critiques) pour atteindre ses objectifs.  
 
-Cet atelier permet de passer du **“qui et pourquoi”** (Atelier 2) au **“comment à haut niveau”**, en s’appuyant sur des référentiels internationaux comme **[[MITRE ATT&CK (MITRE ATT&CK – Adversarial Tactics, Techniques & Common Knowledge)]]** et la **Cyber Kill Chain**.
+Cet atelier permet de passer du **“qui et pourquoi”** (Atelier 2) au **“comment à haut niveau”**, en s’appuyant sur des référentiels internationaux comme **MITRE ATT&CK (MITRE ATT&CK – Adversarial Tactics, Techniques & Common Knowledge)** et la **Cyber Kill Chain**.
 
 ---
 

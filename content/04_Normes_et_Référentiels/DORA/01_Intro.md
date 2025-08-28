@@ -18,7 +18,7 @@ Les **incidents majeurs** et campagnes à large échelle ont mis en lumière des
 
 DORA impose des **obligations contraignantes** et **auditées** : une **gouvernance** explicite de la résilience numérique (rôle du Conseil/COMEX, responsabilités de la direction), une **gestion des risques TIC** documentée et mesurée, un **cadre d’incident reporting** harmonisé, des **tests de résilience** réguliers et proportionnés (jusqu’aux exercices de type TLPT – Threat‑Led Penetration Testing), et une **surveillance des prestataires tiers critiques** (obligations contractuelles renforcées, plans de sortie, réversibilité, exigences de transparence). L’ensemble vise à assurer qu’une entité financière **résiste**, **répond** et **se rétablit** rapidement, tout en **démontrant** sa maîtrise aux régulateurs.
 
-Sur le plan des **alignements**, DORA se lit en cohérence avec [[Directive NIS2 (NIS2 – Network and Information Security 2)]], [[ISO/IEC 27001 (ISO 27001 – Information Security Management)]], [[RGPD (GDPR – General Data Protection Regulation)]] et le [[NIST Cybersecurity Framework (NIST CSF – Cybersecurity Framework)]]. Ces cadres restent utiles pour la structuration interne (SMSI, registres, contrôles), tandis que DORA apporte les **exigences sectorielles** et la **logique de supervision** propres aux services financiers.
+Sur le plan des **alignements**, DORA se lit en cohérence avec Directive NIS2, ISO/IEC 27001, RGPDet le NIST Cybersecurity Framework. Ces cadres restent utiles pour la structuration interne (SMSI, registres, contrôles), tandis que DORA apporte les **exigences sectorielles** et la **logique de supervision** propres aux services financiers.
 
 ---
 

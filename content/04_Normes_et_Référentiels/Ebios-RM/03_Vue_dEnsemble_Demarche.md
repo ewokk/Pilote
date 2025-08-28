@@ -1,6 +1,6 @@
 # Vue d’ensemble de la démarche EBIOS RM
 
-Cette section présente la **logique globale** d’[[EBIOS Risk Manager (EBIOS RM – Expression des Besoins et Identification des Objectifs de Sécurité, Risk Manager)]], depuis la définition du périmètre jusqu’à l’exploitation décisionnelle des résultats. L’objectif est d’offrir une compréhension **transversale** de la méthode avant d’entrer dans le détail de chaque atelier. La démarche s’adresse autant aux équipes techniques qu’aux directions métiers et à la gouvernance, afin d’aligner la sécurité sur les **enjeux business** et sur les contraintes réglementaires (NIS2, DORA, RGPD, LPM).
+Cette section présente la **logique globale** d’EBIOS RM, depuis la définition du périmètre jusqu’à l’exploitation décisionnelle des résultats. L’objectif est d’offrir une compréhension **transversale** de la méthode avant d’entrer dans le détail de chaque atelier. La démarche s’adresse autant aux équipes techniques qu’aux directions métiers et à la gouvernance, afin d’aligner la sécurité sur les **enjeux business** et sur les contraintes réglementaires (NIS2, DORA, RGPD, LPM).
 
 > [!info]  
 > La force d’EBIOS RM réside dans l’enchaînement *cohérent* de cinq ateliers, qui assurent la traçabilité entre les **valeurs métiers**, les **sources de risque**, les **scénarios adverses** et les **décisions de traitement**. Cette structuration facilite les échanges avec les auditeurs et les autorités (ANSSI) et soutient la priorisation au COMEX.
@@ -40,7 +40,7 @@ de l’étude    (Sources de    de menaces     opérationnels  du risque      fe
 
 ## Articulation avec ISO 27005, NIST RMF et FAIR
 
-La démarche EBIOS RM se superpose aisément aux cycles de gestion des risques internationaux. Avec **[[ISO/IEC 27005 (ISO/IEC 27005 – Information security risk management)]]**, elle correspond à l’identification des risques, l’analyse, l’évaluation et le traitement, mais ajoute une focale **adversaire/scénarios** particulièrement utile pour les environnements exposés. Le **[[NIST RMF (NIST Risk Management Framework)]]** met l’accent sur la sélection et l’évaluation des contrôles ; EBIOS RM enrichit cette étape en amont par une compréhension fine des intentions adverses. **[[FAIR (Factor Analysis of Information Risk)]]** peut être mobilisé en complément pour **quantifier** financièrement certains scénarios à fort enjeu.
+La démarche EBIOS RM se superpose aisément aux cycles de gestion des risques internationaux. Avec **ISO/IEC 27005**, elle correspond à l’identification des risques, l’analyse, l’évaluation et le traitement, mais ajoute une focale **adversaire/scénarios** particulièrement utile pour les environnements exposés. Le **NIST RMF** met l’accent sur la sélection et l’évaluation des contrôles ; EBIOS RM enrichit cette étape en amont par une compréhension fine des intentions adverses. **FAIR** peut être mobilisé en complément pour **quantifier** financièrement certains scénarios à fort enjeu.
 
 ---
 
