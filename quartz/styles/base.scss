@@ -649,5 +649,9 @@ iframe.pdf {
 
 .center{
   background-color: rgba(var(--bb0rgb), 0.75) !important;
-  box-shadow: 0 0 100px 100px rgba(var(--bb0rgb), 0.75);
+  box-shadow: 
+    100px 0 100px 100px rgba(var(--bb0rgb), 0.75),/* droite */
+    -100px 0 100px 100px rgba(var(--bb0rgb), 0.75);/* gauche */
+
+  /*   0 0 100px 100px rgba(var(--bb0rgb), 0.75); */
 }
