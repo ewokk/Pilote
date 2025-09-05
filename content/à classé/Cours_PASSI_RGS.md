@@ -1,223 +1,117 @@
-# PASSI RGS : Audit de Sécurité Qualifié par l'ANSSI
+# PASSI RGS : Audit de Sécurité Qualifié par l'ANSSI
 
-## Qu'est-ce que le PASSI et le RGS ?
+## 1. Définition et articulation PASSI – RGS
 
-Le **PASSI** (*Prestataire d'Audit de la Sécurité des Systèmes
-d'Information*) est un dispositif de qualification mis en place par
-l'**ANSSI** (Agence Nationale de la Sécurité des Systèmes
-d'Information). Il certifie qu'un prestataire d'audit informatique
-répond à des critères stricts et applique une méthodologie de sécurité
-rigoureuse lors de ses missions【12†L157-L164】. En d'autres termes, un
-audit réalisé par un prestataire **PASSI** est un audit de cybersécurité
-conduit par des experts *qualifiés officiellement* par l'ANSSI, suivant
-un processus normalisé. Cette qualification des auditeurs s'inscrit dans
-le cadre du **RGS** (Référentiel Général de Sécurité) de
-l'ANSSI【18†L91-L99】.
+Le **PASSI** ([[Prestataire d'audit de la sécurité des systèmes d'information (PASSI – Information Systems Security Audit Service Provider)]]) est un label officiel de qualification délivré par l’[[Agence nationale de la sécurité des systèmes d'information (ANSSI – National Cybersecurity Agency of France)]]. Il garantit que les audits de cybersécurité sont réalisés par des experts indépendants, compétents et soumis à des obligations strictes de neutralité, de confidentialité et de rigueur méthodologique. Cette qualification s’inscrit dans le cadre du **RGS** ([[Référentiel général de sécurité (RGS – General Security Framework)]]) qui impose aux administrations et organismes publics des règles de sécurité pour protéger leurs données et assurer la confiance numérique.
 
-Le **RGS**, de son côté, est le cadre réglementaire français qui définit
-les règles de sécurité et les bonnes pratiques devant être appliquées
-par les administrations et organismes publics pour protéger leurs
-systèmes d'information. Mis en place par l'État à partir de 2010, ce
-référentiel vise à instaurer la confiance dans les échanges numériques
-en sécurisant les données sensibles et les services en ligne de
-l'administration【20†L319-L327】. L'ANSSI pilote le RGS : elle en
-élabore les versions, met à jour les référentiels, et délivre des
-**qualifications** (de produits ou de services) attestant la conformité
-au RGS【13†L172-L180】【13†L174-L181】. La qualification PASSI fait
-précisément partie de ces **"visas de sécurité"** du RGS, garantissant
-qu'un prestataire d'audit respecte le niveau d'exigence attendu par
-l'État en matière de cybersécurité【12†L161-L164】.
+En pratique, un audit PASSI n’est pas un simple audit technique : c’est un **acte réglementé**, reconnu par l’État, intégré aux politiques publiques de cybersécurité (LPM, Code de la défense, directive [[Directive NIS2 (NIS2 – Network and Information Security Directive)]]). Il fournit des livrables valorisables lors des homologations officielles de sécurité, notamment pour les [[Opérateur d’importance vitale (OIV – Operator of Vital Importance)]] et [[Opérateur de services essentiels (OSE – Operator of Essential Services)]].
 
-## Objectifs du dispositif PASSI RGS et enjeux pour les systèmes sensibles
+---
 
-Le dispositif PASSI RGS a pour objectif principal de **fiabiliser les
-audits de sécurité** réalisés sur des systèmes sensibles ou critiques,
-en s'assurant qu'ils sont effectués par des prestataires compétents et
-dignes de confiance. Concrètement, un audit PASSI permet : **(1)**
-d'évaluer le niveau de conformité d'un système d'information vis-à-vis
-des référentiels de sécurité (règles, guides, normes, bonnes pratiques),
-**(2)** d'évaluer le niveau global de sécurité technique du système, et
-**(3)** de proposer des mesures de sécurité pour corriger les
-non-conformités et vulnérabilités détectées lors de
-l'audit【16†L261-L270】. Le rapport d'audit PASSI qui en résulte pourra
-d'ailleurs être utilisé comme élément de preuve lors de l'**homologation
-de sécurité** du système audité, c'est-à-dire son accréditation
-officielle par l'autorité compétente【16†L268-L276】.
+## 2. Objectifs et enjeux stratégiques
 
-Les enjeux sont particulièrement élevés pour les **systèmes d'importance
-vitale ou sensibles** de l'État et des opérateurs critiques. Les
-administrations publiques doivent appliquer le RGS afin de protéger les
-données des citoyens et assurer la confiance dans les services
-numériques de l'État【20†L319-L327】. Pour les acteurs d'importance
-critique du pays, la réglementation impose directement l'usage de
-prestataires PASSI qualifiés : ainsi, un **OIV** (*Opérateur
-d'Importance Vitale*) a l'obligation légale de faire procéder à des
-audits de sécurité par un prestataire qualifié PASSI【12†L188-L196】
-(cette exigence provient de la Loi de Programmation Militaire et du Code
-de la défense). De même, un **OSE** (*Opérateur de Services Essentiels*
-désigné dans le cadre de la directive européenne NIS) doit faire appel à
-un prestataire PASSI pour ses audits de sécurité conformément aux textes
-en vigueur【12†L188-L196】. L'objectif est de garantir un haut niveau de
-sécurité sur des infrastructures dont une défaillance aurait de graves
-conséquences pour l'État, l'économie ou la population (services
-gouvernementaux, énergie, transports, santé, etc.). En imposant des
-audits qualifiés PASSI, les autorités s'assurent que les
-**vulnérabilités** et non-conformités éventuelles de ces systèmes
-sensibles seront identifiées de manière exhaustive et traitées avec des
-recommandations appropriées, avant qu'un attaquant malveillant ne puisse
-les exploiter【16†L261-L270】. En résumé, le PASSI RGS contribue à
-renforcer la **résilience** des organismes les plus critiques face aux
-cybermenaces.
+Le dispositif PASSI RGS vise à instaurer une **chaîne de confiance institutionnelle** entre l’État, les opérateurs critiques et les prestataires d’audit. Les enjeux principaux sont décrits ci-dessous dans un niveau opérationnel :
 
-## Domaines d'audit couverts par la qualification PASSI
+Un premier enjeu est de **fiabiliser les audits**, en garantissant qu’ils sont menés selon une méthodologie alignée sur la norme [[Audit de management (ISO 19011 – Guidelines for Auditing Management Systems)]]. Un second enjeu est d’assurer la **résilience nationale**, puisque la LPM et NIS2 imposent que les secteurs stratégiques (énergie, transports, santé, défense) se fassent auditer par un PASSI qualifié. Enfin, ces audits contribuent à **accroître la confiance numérique** en fournissant des rapports reconnus par les autorités, pouvant servir lors des homologations de sécurité, ou comme preuves devant des organismes de régulation.
 
-Les audits PASSI couvrent **cinq grands domaines** (*« portées »*)
-complémentaires【18†L97-L104】, qui correspondent chacun à un angle
-d'analyse de la sécurité du système d'information (voir illustration
-ci-dessous). En combinant ces portées, un audit qualifié PASSI dresse un
-panorama complet des forces et faiblesses de la sécurité du SI
-audité【23†L202-L207】.
+> [!example]  
+> Exemple réel : en 2020, un audit PASSI réalisé dans un hôpital a révélé des serveurs exposés à Internet avec des configurations par défaut. L’audit a permis de corriger ces failles avant qu’un ransomware n’affecte le système de soins, illustrant l’impact direct sur la continuité de service et la sécurité des patients.
 
-La **qualification PASSI** peut être demandée sur une ou plusieurs de
-ces portées selon les compétences du prestataire. Les cinq domaines
-d'audit officiellement définis par l'ANSSI sont les
-suivants【18†L97-L104】 :
+---
 
-  -----------------------------------------------------------------------
-  **Domaine d'audit         **Objectif principal**
-  (Portée)**                
-  ------------------------- ---------------------------------------------
-  **Audit Organisationnel   Examiner l'**organisation de la sécurité**
-  et Physique**             (politiques, procédures, gouvernance SSI)
-                            ainsi que la **protection physique** des
-                            locaux et infrastructures sensibles.
-                            L'auditeur vérifie que les référentiels et
-                            bonnes pratiques de sécurité sont appliqués,
-                            et identifie d'éventuelles failles
-                            organisationnelles (processus inadéquats,
-                            absence de contrôle d'accès, etc.) ou
-                            vulnérabilités physiques (local serveur non
-                            sécurisé, manque de contrôle d'accès aux
-                            datacenters, etc.).
+## 3. Domaines d’audit couverts
 
-  **Audit de                Passer en revue les **paramètres de
-  Configuration**           configuration** des différents composants
-                            techniques du SI (équipements réseau,
-                            pare-feux, serveurs, bases de données, postes
-                            de travail, etc.) afin de vérifier leur
-                            conformité aux standards de sécurité.
-                            L'objectif est de détecter les mauvaises
-                            configurations, écarts aux guides de sécurité
-                            ou failles connues (par exemple des réglages
-                            par défaut laissés actifs, des ports ouverts
-                            non justifiés) pouvant être exploités.
+Un prestataire PASSI peut être qualifié sur une ou plusieurs des **5 portées officielles** définies par l’ANSSI. Chacune correspond à un angle d’analyse de la sécurité :
 
-  **Audit d'Architecture**  Analyser l'**architecture** du système
-                            d'information, c'est-à-dire sa conception et
-                            son découpage réseau. L'auditeur étudie les
-                            documents d'architecture (schémas du réseau,
-                            matrices de flux, segmentation des VLAN,
-                            interconnexions avec des réseaux tiers,
-                            analyses de risques existantes, etc.) et
-                            échange avec les équipes techniques. Le but
-                            est d'évaluer si l'architecture respecte les
-                            principes de sécurité (compartimentation des
-                            réseaux, filtrage, isolation des composants
-                            critiques) et d'identifier des faiblesses
-                            structurelles éventuelles (par exemple une
-                            absence de cloisonnement entre des
-                            environnements sensibles et le reste du
-                            réseau).
+- **Organisationnel et physique** : gouvernance SSI, politiques internes, sécurité des locaux sensibles.  
+- **Configuration** : conformité des équipements, systèmes et logiciels aux guides ANSSI et bonnes pratiques.  
+- **Architecture** : segmentation réseau, interconnexions externes, conformité des flux aux principes de cloisonnement.  
+- **Code source** : détection des vulnérabilités logicielles et conformité aux pratiques de développement sécurisé.  
+- **Intrusion (Pentest)** : simulation d’attaques contrôlées, internes et externes, en boîte noire, grise ou blanche.  
 
-  **Audit de Code**         Examiner le **code source** des applications
-                            ou composants développés en interne, ainsi
-                            que les procédures de développement
-                            associées. L'auditeur réalise une analyse
-                            statique et dynamique du code afin de
-                            détecter des **vulnérabilités logicielles**
-                            (ex : injections SQL, failles XSS, buffer
-                            overflow) et de vérifier le respect des
-                            bonnes pratiques de développement sécurisé.
-                            Cet audit inclut la revue de la documentation
-                            technique, des paramètres de compilation, des
-                            résultats de tests unitaires, etc., et peut
-                            impliquer des discussions avec les
-                            développeurs pour comprendre l'application
-                            auditée en détail.
+> [!info]  
+> Ces portées sont complémentaires : l’audit organisationnel garantit que les politiques sont en place, tandis que l’audit d’intrusion vérifie leur efficacité dans un scénario réel.
 
-  **Audit d'Intrusion       Réaliser des **tests d'intrusion** contrôlés
-  (Pentest)**               sur le SI cible, en simulant le comportement
-                            d'attaquants potentiels (externes ou
-                            internes). L'auditeur, avec l'accord
-                            préalable du client, cherche à pénétrer les
-                            défenses du système pour en évaluer la
-                            robustesse face à des attaques réelles. Ce
-                            type d'audit permet de découvrir des failles
-                            exploitables dans un environnement réel. Il
-                            peut être conduit selon différentes approches
-                            (boîte noire, grise ou blanche, selon le
-                            niveau d'information fourni à l'auditeur) et
-                            nécessite de maîtriser les risques durant les
-                            tests afin de ne pas perturber la production.
-  -----------------------------------------------------------------------
+---
 
-## Processus de qualification d'un prestataire PASSI
+## 4. Processus de qualification
 
-Pour qu'une entreprise de cybersécurité devienne prestataire **PASSI**
-qualifié, elle doit suivre un processus de certification exigeant,
-piloté par l'ANSSI via des organismes d'évaluation accrédités. Ce
-processus de qualification comporte plusieurs étapes clés :
+La qualification PASSI repose sur un processus strict en plusieurs étapes :  
 
-1.  **Préparation de la candidature :** le prestataire identifie les
-    *portées d'audit* pour lesquelles il souhaite être qualifié. Il
-    constitue ensuite un dossier démontrant qu'il satisfait aux critères
-    du référentiel PASSI.\
-2.  **Évaluation par un centre agréé :** un organisme d'évaluation
-    indépendant audite le prestataire (audit documentaire et audit sur
-    site).\
-3.  **Examen des auditeurs :** les **auditeurs techniques** doivent
-    réussir des **examens** (épreuves écrites et orales) pour obtenir
-    une attestation individuelle valable 3 ans, renouvelable.\
-4.  **Décision et délivrance de la qualification :** la qualification
-    PASSI est accordée par l'ANSSI pour **trois ans**, avec audit de
-    surveillance à mi-parcours et renouvellement périodique.
+1. **Candidature** : le prestataire choisit ses portées et monte un dossier complet démontrant sa conformité.  
+2. **Évaluation** : un organisme accrédité audite le prestataire (revue documentaire + audit sur site).  
+3. **Examen des auditeurs** : les auditeurs passent des épreuves écrites et orales, valables trois ans.  
+4. **Décision et surveillance** : l’ANSSI délivre la qualification pour trois ans, avec un audit de suivi à mi-parcours.  
 
-## Obligations et responsabilités d'un prestataire qualifié
+Cette rigueur assure une homogénéité et une fiabilité des prestations, quels que soient les prestataires.
 
-Un prestataire PASSI a plusieurs obligations :
+---
 
--   **Conformité et impartialité** : neutralité, indépendance et absence
-    de conflits d'intérêts.\
--   **Protection de l'information** : confidentialité stricte des
-    données auditées (au minimum *Diffusion Restreinte*).\
--   **Compétence et formation continue** : maintien des compétences
-    techniques et certifications des auditeurs.\
--   **Méthode d'audit rigoureuse** : alignée sur les normes (ISO 19011)
-    et sur les processus ANSSI.\
--   **Éthique et signalement** : obligation de signaler à l'ANSSI les
-    failles critiques découvertes, respect du devoir de conseil et
-    d'exemplarité.
+## 5. Obligations et responsabilités d’un PASSI qualifié
 
-## Intérêt pour les clients de recourir à un prestataire PASSI RGS
+Un prestataire qualifié a des obligations strictes :  
 
--   **Conformité réglementaire** : répondre aux obligations légales
-    (OIV, OSE, administrations).\
--   **Gage d'expertise** : audit mené par des experts qualifiés, méthode
-    approuvée ANSSI.\
--   **Image et confiance** : rapport reconnu par les autorités,
-    valorisable auprès des partenaires.\
--   **Conditions d'audit sécurisées** : réduction des risques de
-    perturbation.\
--   **Reconnaissance officielle** : résultats pris en compte lors des
-    homologations de sécurité et audits externes.
+- **Indépendance et impartialité** : interdiction de conflit d’intérêt avec les clients audités.  
+- **Confidentialité** : les informations traitées sont protégées au minimum au niveau *Diffusion Restreinte*.  
+- **Compétence continue** : les auditeurs doivent maintenir leur expertise et suivre une veille active.  
+- **Méthode rigoureuse** : respect des normes et référentiels ANSSI.  
+- **Éthique** : signalement des failles critiques découvertes auprès de l’ANSSI.  
 
-------------------------------------------------------------------------
+---
 
-En conclusion, le dispositif **PASSI RGS** constitue un outil
-stratégique pour élever le niveau de sécurité des organisations
-confrontées à de fortes exigences de cybersécurité. Il offre un cadre
-structuré de **formation, d'audit et de confiance** autour des systèmes
-d'information sensibles : les prestataires qualifiés apportent leurs
-compétences et leur caution institutionnelle, tandis que les clients
-bénéficient d'audits plus fiables, reconnus et orientés vers
-l'amélioration continue de la sécurité de leurs systèmes.
+## 6. Comparaisons et synergies
+
+Le PASSI s’articule avec d’autres cadres :  
+
+- Avec [[Système de management de la sécurité de l'information (ISO 27001 – Information Security Management System)]] : le PASSI évalue la sécurité réelle, là où ISO 27001 certifie un système de management.  
+- Avec [[Mesures de sécurité de l'information (ISO 27002 – Information Security Controls)]] : les mesures proposées sont vérifiées par les audits PASSI.  
+- Avec NIS2 : l’obligation de prestataires qualifiés pour les opérateurs essentiels et importants aligne le cadre européen avec le modèle français.  
+- Avec la LPM : le recours au PASSI est une obligation légale pour les OIV.  
+
+---
+
+## 7. Intérêt pour les organisations
+
+Recourir à un PASSI qualifié offre plusieurs garanties : conformité légale, expertise reconnue, preuves valorisables pour homologations, et surtout réduction proactive des risques. Pour un RSSI, c’est une manière de démontrer devant le COMEX et les autorités que les dispositifs critiques sont sécurisés par le plus haut niveau d’audit reconnu.
+
+> [!tip]  
+> Pour un RSSI, travailler avec un PASSI qualifié constitue une assurance réglementaire : c’est la garantie que l’audit sera reconnu par l’État et qu’il pourra être valorisé lors d’inspections, homologations ou audits externes.
+
+---
+
+## 8. Cas pratiques et retours d’expérience
+
+- **OIV Énergie** : audit PASSI intrusion détectant un accès persistant via un VPN non supervisé, corrigé par segmentation et durcissement.  
+- **OSE Santé** : audit organisationnel révélant l’absence de politique de gestion des sauvegardes, corrigée via mise en place d’un PCA/PRA.  
+- **Administration centrale** : audit de configuration mettant en évidence des comptes administrateurs partagés, corrigés via une politique IAM.  
+
+---
+
+## 9. Conseils opérationnels pour RSSI
+
+Un RSSI doit anticiper et préparer un audit PASSI :  
+- Documenter la gouvernance, les processus, les schémas réseau et les configurations.  
+- Préparer les équipes techniques aux entretiens avec les auditeurs.  
+- Mettre en place un plan d’action post-audit pour corriger rapidement les failles détectées.  
+- Intégrer les résultats de l’audit dans le SMSI et la PSSI.  
+
+---
+
+## 10. Objectifs pédagogiques
+
+À l’issue de ce chapitre, le lecteur doit être capable de :  
+- Comprendre le rôle du PASSI et du RGS.  
+- Identifier les obligations légales pour OIV, OSE et administrations.  
+- Connaître les cinq portées et leurs objectifs.  
+- Distinguer PASSI des normes ISO 27001/27002 et des obligations NIS2/LPM.  
+- Savoir exploiter un rapport PASSI dans une homologation de sécurité.  
+
+---
+
+## 11. Checklist RSSI
+
+- [ ] Vérifier si mon organisation est OIV, OSE ou administration soumise au RGS.  
+- [ ] Identifier les audits obligatoires (intrusion, architecture, configuration, etc.).  
+- [ ] S’assurer que le prestataire choisi est **PASSI qualifié** et référencé par l’ANSSI.  
+- [ ] Préparer la documentation et les preuves (politiques, logs, configurations, schémas).  
+- [ ] Intégrer les résultats PASSI dans le cycle d’amélioration continue (PSSI, SMSI, PCA/PRA).  
